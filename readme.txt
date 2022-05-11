@@ -5,6 +5,11 @@ Test SW: openwrit 3.18.109
 
 Usage:
 	copy hello_eeprom to openwrt/package/kernel
+	make menuconfig
+		select
+		Kernel modules
+		Other modules
+		[*]kmod-hello_eeprom	
 	make package/hello_eeprom/compile V=s
 	opkg install ipk to Linkit 7688
 
