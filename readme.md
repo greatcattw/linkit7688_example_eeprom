@@ -1,10 +1,15 @@
-Object : example of EEPROM AT24C02 proc driver
+# Object : example of EEPROM AT24C02 proc driver
 
-Test HW: Linkit 7688
-Test SW: openwrit 3.18.109
+## Test HW: 
+Linkit 7688
 
-Usage:
+## Test SW: 
+openwrit 3.18.109
+
+## Usage:
+
 	copy hello_eeprom to openwrt/package/kernel
+	
 	make menuconfig
 		select
 		Kernel modules
@@ -16,5 +21,7 @@ Usage:
 	echo "0123456" > /proc/HELLO_EEPROM
 	cat /proc/HELLO_EEPROM
 
+
+![PIC](usage.png)<BR>
 
 If the code help you, how about buy street cat a fish can ?
